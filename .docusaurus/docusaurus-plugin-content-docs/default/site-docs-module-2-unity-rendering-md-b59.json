@@ -1,0 +1,24 @@
+{
+  "id": "module2/unity-rendering",
+  "title": "Chapter 8: High-Fidelity Simulation with Unity",
+  "description": "While Gazebo is excellent for physics simulation, the Unity game engine offers a powerful alternative for creating high-fidelity, visually rich simulation environments. Unity is particularly strong in areas like realistic rendering, complex sensor simulation, and creating large, interactive worlds, making it an ideal choice for training and testing perception and HRI algorithms.",
+  "source": "@site/docs/module2/unity-rendering.md",
+  "sourceDirName": "module2",
+  "slug": "/module2/unity-rendering",
+  "permalink": "/humanoid_robotics_book/docs/module2/unity-rendering",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/module2/unity-rendering.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 7: Simulating the World with Gazebo",
+    "permalink": "/humanoid_robotics_book/docs/module2/gazebo-simulation"
+  },
+  "next": {
+    "title": "Chapter 9: NVIDIA Isaac Sim for Advanced Simulation",
+    "permalink": "/humanoid_robotics_book/docs/module3/isaac-sim-basics"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "module1/ros2-topics",
+  "title": "Chapter 2: Communicating with ROS 2 Topics",
+  "description": "Nodes communicate with each other by publishing messages to topics. Topics are named buses over which nodes exchange messages. This chapter explains how to use topics to send and receive data.",
+  "source": "@site/docs/module1/ros2-topics.md",
+  "sourceDirName": "module1",
+  "slug": "/module1/ros2-topics",
+  "permalink": "/humanoid_robotics_book/docs/module1/ros2-topics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/module1/ros2-topics.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 1: Understanding ROS 2 Nodes",
+    "permalink": "/humanoid_robotics_book/docs/module1/ros2-nodes"
+  },
+  "next": {
+    "title": "Chapter 3: Using ROS 2 Services for Request/Response",
+    "permalink": "/humanoid_robotics_book/docs/module1/ros2-services"
+  }
+}

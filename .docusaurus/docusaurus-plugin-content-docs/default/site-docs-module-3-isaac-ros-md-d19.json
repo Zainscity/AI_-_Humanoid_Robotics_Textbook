@@ -1,0 +1,24 @@
+{
+  "id": "module3/isaac-ros",
+  "title": "Chapter 10: Accelerating Robotics with Isaac ROS",
+  "description": "NVIDIA Isaac ROS is a collection of hardware-accelerated packages for ROS 2, specifically designed to leverage the power of NVIDIA GPUs and Jetson platforms. It provides high-performance, AI-accelerated capabilities for common robotics tasks, enabling developers to build and deploy complex perception and navigation pipelines more efficiently.",
+  "source": "@site/docs/module3/isaac-ros.md",
+  "sourceDirName": "module3",
+  "slug": "/module3/isaac-ros",
+  "permalink": "/humanoid_robotics_book/docs/module3/isaac-ros",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/module3/isaac-ros.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 9: NVIDIA Isaac Sim for Advanced Simulation",
+    "permalink": "/humanoid_robotics_book/docs/module3/isaac-sim-basics"
+  },
+  "next": {
+    "title": "Chapter 11: Bipedal Navigation with Nav2",
+    "permalink": "/humanoid_robotics_book/docs/module3/nav2-biped"
+  }
+}

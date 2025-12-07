@@ -1,0 +1,24 @@
+{
+  "id": "appendices/hardware-guide",
+  "title": "Appendix A: Hardware Guide",
+  "description": "This appendix provides a detailed guide to the hardware required to follow the hands-on portions of this book, both for the digital twin workstation and for building a physical robot.",
+  "source": "@site/docs/appendices/hardware-guide.md",
+  "sourceDirName": "appendices",
+  "slug": "/appendices/hardware-guide",
+  "permalink": "/humanoid_robotics_book/docs/appendices/hardware-guide",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/appendices/hardware-guide.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Part VI: Capstone Project - The Autonomous Humanoid Assistant",
+    "permalink": "/humanoid_robotics_book/docs/capstone/main"
+  },
+  "next": {
+    "title": "Appendix B: 13-Week Course Roadmap",
+    "permalink": "/humanoid_robotics_book/docs/appendices/weekly-roadmap"
+  }
+}

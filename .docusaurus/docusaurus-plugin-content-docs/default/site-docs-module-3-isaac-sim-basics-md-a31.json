@@ -1,0 +1,24 @@
+{
+  "id": "module3/isaac-sim-basics",
+  "title": "Chapter 9: NVIDIA Isaac Sim for Advanced Simulation",
+  "description": "NVIDIA Isaac Sim is a scalable robotics simulation platform and synthetic data generation tool. Built on the NVIDIA Omniverse™ platform, it is designed to create physically accurate, photorealistic simulations that are essential for developing, testing, and training AI-based robots in a virtual environment before deploying them to the real world.",
+  "source": "@site/docs/module3/isaac-sim-basics.md",
+  "sourceDirName": "module3",
+  "slug": "/module3/isaac-sim-basics",
+  "permalink": "/humanoid_robotics_book/docs/module3/isaac-sim-basics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/module3/isaac-sim-basics.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 8: High-Fidelity Simulation with Unity",
+    "permalink": "/humanoid_robotics_book/docs/module2/unity-rendering"
+  },
+  "next": {
+    "title": "Chapter 10: Accelerating Robotics with Isaac ROS",
+    "permalink": "/humanoid_robotics_book/docs/module3/isaac-ros"
+  }
+}

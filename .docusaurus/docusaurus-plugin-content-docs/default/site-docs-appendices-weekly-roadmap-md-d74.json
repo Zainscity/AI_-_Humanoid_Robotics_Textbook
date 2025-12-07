@@ -1,0 +1,20 @@
+{
+  "id": "appendices/weekly-roadmap",
+  "title": "Appendix B: 13-Week Course Roadmap",
+  "description": "This appendix provides a suggested 13-week roadmap for readers following this book as part of a course or structured self-study program. Each week includes reading assignments, practical goals, and a key milestone.",
+  "source": "@site/docs/appendices/weekly-roadmap.md",
+  "sourceDirName": "appendices",
+  "slug": "/appendices/weekly-roadmap",
+  "permalink": "/humanoid_robotics_book/docs/appendices/weekly-roadmap",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/appendices/weekly-roadmap.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Appendix A: Hardware Guide",
+    "permalink": "/humanoid_robotics_book/docs/appendices/hardware-guide"
+  }
+}

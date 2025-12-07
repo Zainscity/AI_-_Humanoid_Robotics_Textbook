@@ -1,0 +1,24 @@
+{
+  "id": "module1/ros2-nodes",
+  "title": "Chapter 1: Understanding ROS 2 Nodes",
+  "description": "A ROS 2 system is a distributed network of processes called nodes. Each node is a fundamental unit of computation and should be responsible for a single, modular purpose (e.g., one node for controlling wheel motors, one for processing camera images, and another for planning paths). This chapter explains what nodes are and how to create and manage them.",
+  "source": "@site/docs/module1/ros2-nodes.md",
+  "sourceDirName": "module1",
+  "slug": "/module1/ros2-nodes",
+  "permalink": "/humanoid_robotics_book/docs/module1/ros2-nodes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/module1/ros2-nodes.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Part I: Foundations of Physical AI & Embodied Intelligence",
+    "permalink": "/humanoid_robotics_book/docs/foundations/intro"
+  },
+  "next": {
+    "title": "Chapter 2: Communicating with ROS 2 Topics",
+    "permalink": "/humanoid_robotics_book/docs/module1/ros2-topics"
+  }
+}

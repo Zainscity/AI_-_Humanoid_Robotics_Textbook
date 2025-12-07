@@ -1,0 +1,24 @@
+{
+  "id": "module3/nav2-biped",
+  "title": "Chapter 11: Bipedal Navigation with Nav2",
+  "description": "Navigating in complex, human-centric environments is a fundamental capability for any humanoid robot. For wheeled robots, ROS 2's Nav2 stack is the de facto standard, providing a robust and modular solution. However, adapting Nav2 for a bipedal humanoid presents unique challenges that require significant customization of its core components.",
+  "source": "@site/docs/module3/nav2-biped.md",
+  "sourceDirName": "module3",
+  "slug": "/module3/nav2-biped",
+  "permalink": "/humanoid_robotics_book/docs/module3/nav2-biped",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/module3/nav2-biped.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 10: Accelerating Robotics with Isaac ROS",
+    "permalink": "/humanoid_robotics_book/docs/module3/isaac-ros"
+  },
+  "next": {
+    "title": "Chapter 12: Voice Control with OpenAI Whisper",
+    "permalink": "/humanoid_robotics_book/docs/module4/whisper"
+  }
+}

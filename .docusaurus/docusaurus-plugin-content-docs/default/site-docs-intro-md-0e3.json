@@ -1,0 +1,22 @@
+{
+  "id": "intro",
+  "title": "Introduction: Building the Future of Physical AI",
+  "description": "Welcome to \"Physical AI & Humanoid Robotics,\" your comprehensive guide to designing, building, and programming the next generation of intelligent, embodied agents. This book will take you on a journey from the fundamental principles of robotics and AI to the cutting-edge technologies that are making autonomous humanoid robots a reality.",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/humanoid_robotics_book/docs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "slug": "/"
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Part I: Foundations of Physical AI & Embodied Intelligence",
+    "permalink": "/humanoid_robotics_book/docs/foundations/intro"
+  }
+}

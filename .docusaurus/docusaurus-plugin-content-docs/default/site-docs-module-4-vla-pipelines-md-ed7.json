@@ -1,0 +1,24 @@
+{
+  "id": "module4/vla-pipelines",
+  "title": "Chapter 14: Building Vision-Language-Action (VLA) Pipelines",
+  "description": "We've now explored the key components of an intelligent robotics system: vision (perception), language (speech recognition and understanding), and action (robot control). The final step is to integrate these components into a cohesive Vision-Language-Action (VLA) pipeline, which is the architecture that brings everything together to create a truly interactive and intelligent robot.",
+  "source": "@site/docs/module4/vla-pipelines.md",
+  "sourceDirName": "module4",
+  "slug": "/module4/vla-pipelines",
+  "permalink": "/humanoid_robotics_book/docs/module4/vla-pipelines",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/module4/vla-pipelines.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 13: Cognitive Planning with Large Language Models",
+    "permalink": "/humanoid_robotics_book/docs/module4/llm-planning"
+  },
+  "next": {
+    "title": "Part VI: Capstone Project - The Autonomous Humanoid Assistant",
+    "permalink": "/humanoid_robotics_book/docs/capstone/main"
+  }
+}

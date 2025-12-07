@@ -1,0 +1,24 @@
+{
+  "id": "module2/urdf-modeling",
+  "title": "Chapter 6: Modeling a Humanoid with URDF",
+  "description": "Before we can simulate our robot, we need a detailed digital model of it. In ROS, the standard format for describing a robot's structure is the Unified Robot Description Format (URDF). This chapter covers the essentials of creating a URDF file, from basic links and joints to more advanced concepts needed for accurate simulation.",
+  "source": "@site/docs/module2/urdf-modeling.md",
+  "sourceDirName": "module2",
+  "slug": "/module2/urdf-modeling",
+  "permalink": "/humanoid_robotics_book/docs/module2/urdf-modeling",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/module2/urdf-modeling.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 5: A Closer Look at rclpy",
+    "permalink": "/humanoid_robotics_book/docs/module1/rclpy"
+  },
+  "next": {
+    "title": "Chapter 7: Simulating the World with Gazebo",
+    "permalink": "/humanoid_robotics_book/docs/module2/gazebo-simulation"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "module2/gazebo-simulation",
+  "title": "Chapter 7: Simulating the World with Gazebo",
+  "description": "With a URDF model in hand, we can bring our robot to life in a simulated environment. Gazebo is a powerful 3D robotics simulator that allows you to test your robot's design and control algorithms in a realistic virtual world before deploying them on a physical robot.",
+  "source": "@site/docs/module2/gazebo-simulation.md",
+  "sourceDirName": "module2",
+  "slug": "/module2/gazebo-simulation",
+  "permalink": "/humanoid_robotics_book/docs/module2/gazebo-simulation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/module2/gazebo-simulation.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 6: Modeling a Humanoid with URDF",
+    "permalink": "/humanoid_robotics_book/docs/module2/urdf-modeling"
+  },
+  "next": {
+    "title": "Chapter 8: High-Fidelity Simulation with Unity",
+    "permalink": "/humanoid_robotics_book/docs/module2/unity-rendering"
+  }
+}

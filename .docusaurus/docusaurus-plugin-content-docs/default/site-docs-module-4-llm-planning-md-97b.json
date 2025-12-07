@@ -1,0 +1,24 @@
+{
+  "id": "module4/llm-planning",
+  "title": "Chapter 13: Cognitive Planning with Large Language Models",
+  "description": "Once a robot can perceive its environment and understand human speech, the next frontier is enabling it to reason about high-level commands and generate a sequence of actions to achieve them. This is where Large Language Models (LLMs) like GPT-4 and Claude 3 serve as a \"cognitive engine\" for the robot, translating natural language into actionable plans.",
+  "source": "@site/docs/module4/llm-planning.md",
+  "sourceDirName": "module4",
+  "slug": "/module4/llm-planning",
+  "permalink": "/humanoid_robotics_book/docs/module4/llm-planning",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/module4/llm-planning.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 12: Voice Control with OpenAI Whisper",
+    "permalink": "/humanoid_robotics_book/docs/module4/whisper"
+  },
+  "next": {
+    "title": "Chapter 14: Building Vision-Language-Action (VLA) Pipelines",
+    "permalink": "/humanoid_robotics_book/docs/module4/vla-pipelines"
+  }
+}
