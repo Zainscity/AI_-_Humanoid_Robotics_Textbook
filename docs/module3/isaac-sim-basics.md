@@ -4,6 +4,8 @@ NVIDIA Isaac Sim is a scalable robotics simulation platform and synthetic data g
 
 ## Core Features of Isaac Sim
 
+Isaac Sim is a powerful tool that offers several key advantages for robotics simulation:
+
 -   **PhysX 5.0**: Isaac Sim leverages the high-performance PhysX 5.0 engine for highly accurate, GPU-accelerated physics simulation, including rigid and soft body dynamics, and deformable materials.
 -   **Real-Time Ray Tracing**: Built on NVIDIA's RTX technology, Isaac Sim produces stunningly realistic visuals. This is crucial for generating high-fidelity synthetic data for training and testing perception algorithms, reducing the need for expensive real-world data collection.
 -   **Universal Scene Description (USD)**: Isaac Sim is architected around Pixar's USD format, a powerful framework for describing, composing, and collaborating on 3D scenes. This allows for seamless interoperability with a wide range of 3D modeling and content creation tools.

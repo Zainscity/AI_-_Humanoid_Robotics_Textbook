@@ -9,6 +9,8 @@ Isaac ROS is not a single piece of software but a suite of optimized ROS 2 packa
 -   **AI and Deep Learning Integration**: A collection of packages for running state-of-the-art deep learning models for tasks like object detection, semantic segmentation, and stereo depth estimation.
 -   **VSLAM (Visual Simultaneous Localization and Mapping)**: GPU-accelerated packages for robust and accurate pose estimation and map building using visual and inertial sensors.
 
+Think of it as a set of building blocks that you can use to create a high-performance perception system for your robot.
+
 ## The NITROS Architecture: Zero-Copy Communication
 
 A key innovation in Isaac ROS is **NITROS (NVIDIA Isaac Transport for ROS)**. NITROS enables **zero-copy** communication between ROS 2 nodes. In a typical ROS 2 pipeline, data (like an image) is copied from one node's memory to another's, which introduces latency and CPU overhead.

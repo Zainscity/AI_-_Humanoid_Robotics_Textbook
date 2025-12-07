@@ -4,7 +4,7 @@ Nodes communicate with each other by publishing messages to **topics**. Topics a
 
 ## What is a Topic?
 
-A topic is a named channel that nodes use to communicate with each other. Nodes can **publish** messages to a topic, and other nodes can **subscribe** to that topic to receive the messages. This publish/subscribe model is a flexible and powerful way to decouple nodes from each other.
+A topic is a named channel that nodes use to communicate with each other. Nodes can **publish** messages to a topic, and other nodes can **subscribe** to that topic to receive the messages. This publish/subscribe model is a flexible and powerful way to decouple nodes from each other. Think of it like a mailing list: a publisher sends an email to the list, and everyone who has subscribed to that list receives a copy.
 
 A key feature of topics is that they create an anonymous, many-to-many communication channel. A publisher doesn't know which nodes (or how many) are subscribed, and a subscriber doesn't know where the messages are coming from. This decoupling is essential for building large, modular robotics systems.
 

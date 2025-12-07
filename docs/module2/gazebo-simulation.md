@@ -5,7 +5,7 @@ With a URDF model in hand, we can bring our robot to life in a simulated environ
 ## Why Gazebo?
 
 Gazebo is a cornerstone of the ROS ecosystem for several reasons:
--   **Realistic Physics**: It uses high-performance physics engines (like ODE, Bullet, or DART) to simulate gravity, friction, contact forces, and fluid dynamics.
+-   **Realistic Physics**: It uses high-performance physics engines (like ODE, Bullet, or DART) to simulate gravity, friction, contact forces, and fluid dynamics. This allows you to test your robot's stability and control in a physically plausible way.
 -   **High-Fidelity Sensors**: You can add a wide variety of sensors to your robot, including cameras, LiDAR, IMUs, GPS, and contact sensors. Gazebo generates realistic sensor data, including noise, which is crucial for testing perception algorithms.
 -   **Seamless ROS Integration**: Gazebo is tightly integrated with ROS 2. Through the `gazebo_ros` package, you can spawn URDF models, control joints, and publish/subscribe to topics, services, and actions, just as you would on a real robot.
 -   **Extensible Architecture**: Gazebo has a powerful plugin architecture that allows you to customize and extend the simulator's functionality to match your specific needs.

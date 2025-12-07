@@ -10,6 +10,8 @@ The Nav2 stack is a collection of ROS 2 packages that together provide a complet
 -   **Local Planner/Controller**: Generates short-term, local control commands to follow the global path while avoiding dynamic, unseen obstacles.
 -   **Recoveries**: A set of behaviors to handle failure cases, such as being stuck or localization failure.
 
+Think of it as the robot's "GPS" and "driver" all in one.
+
 ## Challenges for Bipedal Humanoids
 
 Traditional Nav2 is optimized for robots that move with continuous velocity commands (e.g., differential drive or holonomic bases). Bipedal robots are fundamentally different:

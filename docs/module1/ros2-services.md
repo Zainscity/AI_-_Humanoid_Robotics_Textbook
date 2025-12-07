@@ -4,7 +4,7 @@ While topics are great for continuous data streams, sometimes you need a direct 
 
 ## What is a Service?
 
-A service is a type of communication that allows one node (the **client**) to send a request to another node (the **server**) and wait for a response. This is a synchronous, one-to-one communication model, unlike the asynchronous, many-to-many model of topics. Services are ideal for tasks that have a clear beginning and end, and where a direct confirmation of success is needed, such as triggering a computation or changing a setting.
+A service is a type of communication that allows one node (the **client**) to send a request to another node (the **server**) and wait for a response. This is a synchronous, one-to-one communication model, unlike the asynchronous, many-to-many model of topics. Services are ideal for tasks that have a clear beginning and end, and where a direct confirmation of success is needed, such as triggering a computation or changing a setting. Think of it like calling a function in a remote component.
 
 A service is defined by a `.srv` file, which specifies the structure of the request and the response.
 

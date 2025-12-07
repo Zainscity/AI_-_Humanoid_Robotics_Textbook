@@ -1,4 +1,4 @@
-# Part I: Foundations of Physical AI & Embodied Intelligence
+# Foundations of Physical AI & Embodied Intelligence
 
 Welcome to the beginning of your journey into the fascinating world of humanoid robotics. This initial part of the book lays the essential groundwork, introducing the core concepts of **Physical AI** and **Embodied Intelligence**. Understanding these principles is crucial before we dive into the practical aspects of building and programming intelligent robots.
 

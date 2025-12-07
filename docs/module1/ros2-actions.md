@@ -9,7 +9,7 @@ An action is designed for long-running, preemptible tasks. It consists of three 
 2.  **Feedback**: While processing the goal, the server provides regular updates on its progress (e.g., "current joint angles are [1.2, 0.6, -1.0]").
 3.  **Result**: Once the task is complete, the server sends a final result (e.g., "successfully reached target joint angles").
 
-This structure allows for robust handling of complex behaviors. A key feature of actions is that the client can request to **cancel** a goal before it has completed, and the server can accept or reject the cancellation.
+This structure allows for robust handling of complex behaviors. Think of it like ordering a pizza: you place an order (the goal), you can call to check on the status (the feedback), and you eventually receive the pizza (the result). A key feature of actions is that the client can request to **cancel** a goal before it has completed, and the server can accept or reject the cancellation.
 
 ## Action Definition Files (.action)
 

@@ -10,6 +10,8 @@ LLMs are powerful at understanding context, reasoning about complex requests, an
 -   **Generate Actionable Plans**: The primary role of the LLM is to generate a sequence of low-level robot commands (or function calls) that can be executed by the robot's control system.
 -   **Handle Errors and Re-plan**: If a step in the plan fails (e.g., the robot fails to grasp an object), the LLM can be informed of the failure and asked to generate a new plan to either recover or try an alternative approach.
 
+Think of the LLM as the robot's "inner monologue," reasoning about what to do next.
+
 ## Prompt Engineering for Robotics
 
 The key to successfully using an LLM for planning is **prompt engineering**. The prompt provides the LLM with all the context it needs to make an informed decision. A well-designed prompt for a robotics task should include:

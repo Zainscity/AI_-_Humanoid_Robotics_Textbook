@@ -4,13 +4,13 @@ While Gazebo is excellent for physics simulation, the **Unity** game engine offe
 
 ## Why Unity for Robotics?
 
-Unity has become a leading platform for robotics simulation thanks to a set of specialized tools. The [Unity Robotics Hub](https://github.com/Unity-Technologies/Unity-Robotics-Hub) provides open-source packages that enable seamless integration with ROS 2.
+Unity has become a leading platform for robotics simulation thanks to a set of specialized tools. The [Unity Robotics Hub](https://github.com/Unity-Technologies/Unity-Robotics-Hub) provides open-source packages that enable seamless integration with ROS 2. If your primary focus is on training and testing perception algorithms with realistic sensor data, Unity is an excellent choice.
 
 Key advantages include:
 -   **Photorealistic Graphics**: Unity's High Definition Render Pipeline (HDRP) allows for stunningly realistic visuals, which is crucial for training and validating computer vision models on synthetic data.
 -   **ROS 2 Integration**: The `ROS-TCP-Connector` package allows Unity to communicate with a ROS 2 network over TCP. The `Visualizations` package provides out-of-the-box ways to display ROS messages (like point clouds and trajectories) in the Unity scene.
 -   **URDF Importer**: The `URDF-Importer` package can import a URDF file and automatically generate a corresponding robot model in Unity, including its visual meshes and joint hierarchy.
--   **Rich Asset Ecosystem**: The Unity Asset Store provides a vast library of 3D models, textures, and environments that you can use to rapidly build complex and diverse simulation worlds.
+-   **Rich Asset Ecosystem**: the Unity Asset Store provides a vast library of 3D models, textures, and environments that you can use to rapidly build complex and diverse simulation worlds.
 
 ## The Unity Simulation Environment
 

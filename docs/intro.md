@@ -1,14 +1,15 @@
 ---
+sidebar_position: 1
 slug: /
 ---
 
-# Introduction: Building the Future of Physical AI
+# Introduction
 
 Welcome to "Physical AI & Humanoid Robotics," your comprehensive guide to designing, building, and programming the next generation of intelligent, embodied agents. This book will take you on a journey from the fundamental principles of robotics and AI to the cutting-edge technologies that are making autonomous humanoid robots a reality.
 
 ## What This Book Is About
 
-This book provides a hands-on, project-based approach to learning humanoid robotics. We will cover the entire pipeline of modern robotics development, from creating a digital twin of a robot in simulation to deploying advanced AI models for perception, navigation, and interaction.
+This book provides a hands-on, project-based approach to learning humanoid robotics. We will cover the entire pipeline of modern robotics development, from creating a digital twin of a robot in simulation to deploying advanced AI models for perception, navigation, and interaction. By the end of this book, you will have built a complete software and AI stack for a simulated humanoid robot.
 
 We will explore a powerful stack of open-source and industry-standard tools, including:
 -   **ROS 2**: The backbone for our robot's software architecture.

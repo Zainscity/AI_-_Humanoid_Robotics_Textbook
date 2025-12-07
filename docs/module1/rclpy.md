@@ -1,6 +1,6 @@
 # Chapter 5: A Closer Look at `rclpy`
 
-Throughout this module, we've been using the `rclpy` library to write our ROS 2 nodes in Python. `rclpy` (ROS Client Library for Python) is the official Python client library for ROS 2. It provides a high-level, Pythonic interface to the underlying C++ libraries and the ROS 2 middleware, allowing you to build complex robotics applications with ease.
+Throughout this module, we've been using the `rclpy` library to write our ROS 2 nodes in Python. `rclpy` (ROS Client Library for Python) is the official Python client library for ROS 2. It provides a high-level, Pythonic interface to the underlying C++ libraries and the ROS 2 middleware, allowing you to build complex robotics applications with ease. This chapter will take a deeper dive into some of the more advanced features of `rclpy`.
 
 ## Core `rclpy` Functionality
 
