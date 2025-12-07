@@ -16,12 +16,12 @@ const config = {
   url: 'https://Zainscity.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/humanoid_robotics_book/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Zainscity', // Usually your GitHub org/user name.
-  projectName: 'humanoid_robotics_book', // Usually your repo name.
+  projectName: 'AI_-_Humanoid_Robotics_Textbook', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -44,7 +44,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Zainscity/humanoid_robotics_book/tree/main/',
+            'https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook/tree/main/',
         },
         blog: false, // Optional: disable the blog plugin
         theme: {
@@ -73,7 +73,7 @@ const config = {
             label: 'Book',
           },
           {
-            href: 'https://github.com/Zainscity/humanoid_robotics_book',
+            href: 'https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook',
             label: 'GitHub',
             position: 'right',
           },
@@ -113,7 +113,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/Zainscity/humanoid_robotics_book',
+                href: 'https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook',
               },
             ],
           },
