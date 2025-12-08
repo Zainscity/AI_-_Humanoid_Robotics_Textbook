@@ -5,20 +5,20 @@
   "source": "@site/docs/module3/isaac-sim-basics.md",
   "sourceDirName": "module3",
   "slug": "/module3/isaac-sim-basics",
-  "permalink": "/humanoid_robotics_book/docs/module3/isaac-sim-basics",
+  "permalink": "/docs/module3/isaac-sim-basics",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/module3/isaac-sim-basics.md",
+  "editUrl": "https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook/tree/main/docs/module3/isaac-sim-basics.md",
   "tags": [],
   "version": "current",
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Chapter 8: High-Fidelity Simulation with Unity",
-    "permalink": "/humanoid_robotics_book/docs/module2/unity-rendering"
+    "permalink": "/docs/module2/unity-rendering"
   },
   "next": {
     "title": "Chapter 10: Accelerating Robotics with Isaac ROS",
-    "permalink": "/humanoid_robotics_book/docs/module3/isaac-ros"
+    "permalink": "/docs/module3/isaac-ros"
   }
 }

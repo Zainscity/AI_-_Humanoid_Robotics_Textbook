@@ -5,20 +5,20 @@
   "source": "@site/docs/appendices/hardware-guide.md",
   "sourceDirName": "appendices",
   "slug": "/appendices/hardware-guide",
-  "permalink": "/humanoid_robotics_book/docs/appendices/hardware-guide",
+  "permalink": "/docs/appendices/hardware-guide",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/appendices/hardware-guide.md",
+  "editUrl": "https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook/tree/main/docs/appendices/hardware-guide.md",
   "tags": [],
   "version": "current",
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Part VI: Capstone Project - The Autonomous Humanoid Assistant",
-    "permalink": "/humanoid_robotics_book/docs/capstone/main"
+    "permalink": "/docs/capstone/main"
   },
   "next": {
     "title": "Appendix B: 13-Week Course Roadmap",
-    "permalink": "/humanoid_robotics_book/docs/appendices/weekly-roadmap"
+    "permalink": "/docs/appendices/weekly-roadmap"
   }
 }

@@ -5,20 +5,20 @@
   "source": "@site/docs/module2/gazebo-simulation.md",
   "sourceDirName": "module2",
   "slug": "/module2/gazebo-simulation",
-  "permalink": "/humanoid_robotics_book/docs/module2/gazebo-simulation",
+  "permalink": "/docs/module2/gazebo-simulation",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/module2/gazebo-simulation.md",
+  "editUrl": "https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook/tree/main/docs/module2/gazebo-simulation.md",
   "tags": [],
   "version": "current",
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Chapter 6: Modeling a Humanoid with URDF",
-    "permalink": "/humanoid_robotics_book/docs/module2/urdf-modeling"
+    "permalink": "/docs/module2/urdf-modeling"
   },
   "next": {
     "title": "Chapter 8: High-Fidelity Simulation with Unity",
-    "permalink": "/humanoid_robotics_book/docs/module2/unity-rendering"
+    "permalink": "/docs/module2/unity-rendering"
   }
 }

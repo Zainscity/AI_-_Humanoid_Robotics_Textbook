@@ -13,8 +13,8 @@
       "calendar": "gregory",
       "path": "en",
       "translate": false,
-      "url": "https://Zainscity.github.io",
-      "baseUrl": "/humanoid_robotics_book/"
+      "url": "https://ai-humanoid-robotics-textbook.vercel.app",
+      "baseUrl": "/"
     }
   }
 }

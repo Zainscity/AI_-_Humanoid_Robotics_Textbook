@@ -7,8 +7,8 @@ export default {
   "title": "Physical AI & Humanoid Robotics",
   "tagline": "From Digital Intelligence to Embodied Agents",
   "favicon": "img/favicon.ico",
-  "url": "https://Zainscity.github.io",
-  "baseUrl": "/humanoid_robotics_book/",
+  "url": "https://ai-humanoid-robotics-textbook.vercel.app",
+  "baseUrl": "/",
   "organizationName": "Zainscity",
   "projectName": "humanoid_robotics_book",
   "onBrokenLinks": "throw",
@@ -26,7 +26,7 @@ export default {
       {
         "docs": {
           "sidebarPath": "./sidebars.js",
-          "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/"
+          "editUrl": "https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook/tree/main/"
         },
         "blog": false,
         "theme": {
@@ -36,12 +36,12 @@ export default {
     ]
   ],
   "themeConfig": {
-    "image": "img/humanoid-robotics-social-card.jpg",
+    "image": "img/banner.png",
     "navbar": {
       "title": "Physical AI & Humanoid Robotics",
       "logo": {
         "alt": "My Site Logo",
-        "src": "img/logo.svg"
+        "src": "img/logo.png"
       },
       "items": [
         {
@@ -51,7 +51,7 @@ export default {
           "label": "Book"
         },
         {
-          "href": "https://github.com/Zainscity/humanoid_robotics_book",
+          "href": "https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook",
           "label": "GitHub",
           "position": "right"
         }
@@ -92,7 +92,7 @@ export default {
           "items": [
             {
               "label": "GitHub",
-              "href": "https://github.com/Zainscity/humanoid_robotics_book"
+              "href": "https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook"
             }
           ]
         }

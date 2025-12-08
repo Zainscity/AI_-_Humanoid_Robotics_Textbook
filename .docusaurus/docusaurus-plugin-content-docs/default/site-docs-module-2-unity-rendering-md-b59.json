@@ -5,20 +5,20 @@
   "source": "@site/docs/module2/unity-rendering.md",
   "sourceDirName": "module2",
   "slug": "/module2/unity-rendering",
-  "permalink": "/humanoid_robotics_book/docs/module2/unity-rendering",
+  "permalink": "/docs/module2/unity-rendering",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/module2/unity-rendering.md",
+  "editUrl": "https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook/tree/main/docs/module2/unity-rendering.md",
   "tags": [],
   "version": "current",
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Chapter 7: Simulating the World with Gazebo",
-    "permalink": "/humanoid_robotics_book/docs/module2/gazebo-simulation"
+    "permalink": "/docs/module2/gazebo-simulation"
   },
   "next": {
     "title": "Chapter 9: NVIDIA Isaac Sim for Advanced Simulation",
-    "permalink": "/humanoid_robotics_book/docs/module3/isaac-sim-basics"
+    "permalink": "/docs/module3/isaac-sim-basics"
   }
 }

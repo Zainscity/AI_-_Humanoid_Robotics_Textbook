@@ -3,128 +3,163 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/humanoid_robotics_book/docs',
-    component: ComponentCreator('/humanoid_robotics_book/docs', '2c6'),
+    path: '/__docusaurus/debug',
+    component: ComponentCreator('/__docusaurus/debug', '5ff'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/config',
+    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/content',
+    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/globalData',
+    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/metadata',
+    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/registry',
+    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/routes',
+    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
+    exact: true
+  },
+  {
+    path: '/docs',
+    component: ComponentCreator('/docs', 'eda'),
     routes: [
       {
-        path: '/humanoid_robotics_book/docs',
-        component: ComponentCreator('/humanoid_robotics_book/docs', '06d'),
+        path: '/docs',
+        component: ComponentCreator('/docs', 'dcf'),
         routes: [
           {
-            path: '/humanoid_robotics_book/docs',
-            component: ComponentCreator('/humanoid_robotics_book/docs', '063'),
+            path: '/docs',
+            component: ComponentCreator('/docs', 'ee7'),
             routes: [
               {
-                path: '/humanoid_robotics_book/docs/',
-                component: ComponentCreator('/humanoid_robotics_book/docs/', '82e'),
+                path: '/docs/',
+                component: ComponentCreator('/docs/', '698'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/humanoid_robotics_book/docs/appendices/hardware-guide',
-                component: ComponentCreator('/humanoid_robotics_book/docs/appendices/hardware-guide', '655'),
+                path: '/docs/appendices/hardware-guide',
+                component: ComponentCreator('/docs/appendices/hardware-guide', 'd50'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/humanoid_robotics_book/docs/appendices/weekly-roadmap',
-                component: ComponentCreator('/humanoid_robotics_book/docs/appendices/weekly-roadmap', '9df'),
+                path: '/docs/appendices/weekly-roadmap',
+                component: ComponentCreator('/docs/appendices/weekly-roadmap', '46c'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/humanoid_robotics_book/docs/capstone/main',
-                component: ComponentCreator('/humanoid_robotics_book/docs/capstone/main', '24f'),
+                path: '/docs/capstone/main',
+                component: ComponentCreator('/docs/capstone/main', '5ff'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/humanoid_robotics_book/docs/foundations/intro',
-                component: ComponentCreator('/humanoid_robotics_book/docs/foundations/intro', '266'),
+                path: '/docs/foundations/intro',
+                component: ComponentCreator('/docs/foundations/intro', '872'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/humanoid_robotics_book/docs/module1/rclpy',
-                component: ComponentCreator('/humanoid_robotics_book/docs/module1/rclpy', 'fc3'),
+                path: '/docs/module1/rclpy',
+                component: ComponentCreator('/docs/module1/rclpy', '61a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/humanoid_robotics_book/docs/module1/ros2-actions',
-                component: ComponentCreator('/humanoid_robotics_book/docs/module1/ros2-actions', 'a1e'),
+                path: '/docs/module1/ros2-actions',
+                component: ComponentCreator('/docs/module1/ros2-actions', '79d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/humanoid_robotics_book/docs/module1/ros2-nodes',
-                component: ComponentCreator('/humanoid_robotics_book/docs/module1/ros2-nodes', '2d0'),
+                path: '/docs/module1/ros2-nodes',
+                component: ComponentCreator('/docs/module1/ros2-nodes', '08d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/humanoid_robotics_book/docs/module1/ros2-services',
-                component: ComponentCreator('/humanoid_robotics_book/docs/module1/ros2-services', 'e30'),
+                path: '/docs/module1/ros2-services',
+                component: ComponentCreator('/docs/module1/ros2-services', '7f7'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/humanoid_robotics_book/docs/module1/ros2-topics',
-                component: ComponentCreator('/humanoid_robotics_book/docs/module1/ros2-topics', '38a'),
+                path: '/docs/module1/ros2-topics',
+                component: ComponentCreator('/docs/module1/ros2-topics', '3f3'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/humanoid_robotics_book/docs/module2/gazebo-simulation',
-                component: ComponentCreator('/humanoid_robotics_book/docs/module2/gazebo-simulation', 'cae'),
+                path: '/docs/module2/gazebo-simulation',
+                component: ComponentCreator('/docs/module2/gazebo-simulation', '954'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/humanoid_robotics_book/docs/module2/unity-rendering',
-                component: ComponentCreator('/humanoid_robotics_book/docs/module2/unity-rendering', 'b60'),
+                path: '/docs/module2/unity-rendering',
+                component: ComponentCreator('/docs/module2/unity-rendering', 'dec'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/humanoid_robotics_book/docs/module2/urdf-modeling',
-                component: ComponentCreator('/humanoid_robotics_book/docs/module2/urdf-modeling', 'b9f'),
+                path: '/docs/module2/urdf-modeling',
+                component: ComponentCreator('/docs/module2/urdf-modeling', 'e34'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/humanoid_robotics_book/docs/module3/isaac-ros',
-                component: ComponentCreator('/humanoid_robotics_book/docs/module3/isaac-ros', '46c'),
+                path: '/docs/module3/isaac-ros',
+                component: ComponentCreator('/docs/module3/isaac-ros', 'd4e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/humanoid_robotics_book/docs/module3/isaac-sim-basics',
-                component: ComponentCreator('/humanoid_robotics_book/docs/module3/isaac-sim-basics', '4bc'),
+                path: '/docs/module3/isaac-sim-basics',
+                component: ComponentCreator('/docs/module3/isaac-sim-basics', 'a1c'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/humanoid_robotics_book/docs/module3/nav2-biped',
-                component: ComponentCreator('/humanoid_robotics_book/docs/module3/nav2-biped', '035'),
+                path: '/docs/module3/nav2-biped',
+                component: ComponentCreator('/docs/module3/nav2-biped', '8a6'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/humanoid_robotics_book/docs/module4/llm-planning',
-                component: ComponentCreator('/humanoid_robotics_book/docs/module4/llm-planning', '0d8'),
+                path: '/docs/module4/llm-planning',
+                component: ComponentCreator('/docs/module4/llm-planning', 'e9b'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/humanoid_robotics_book/docs/module4/vla-pipelines',
-                component: ComponentCreator('/humanoid_robotics_book/docs/module4/vla-pipelines', 'c57'),
+                path: '/docs/module4/vla-pipelines',
+                component: ComponentCreator('/docs/module4/vla-pipelines', '44e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/humanoid_robotics_book/docs/module4/whisper',
-                component: ComponentCreator('/humanoid_robotics_book/docs/module4/whisper', '05e'),
+                path: '/docs/module4/whisper',
+                component: ComponentCreator('/docs/module4/whisper', 'ae6'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -135,8 +170,8 @@ export default [
     ]
   },
   {
-    path: '/humanoid_robotics_book/',
-    component: ComponentCreator('/humanoid_robotics_book/', 'cd5'),
+    path: '/',
+    component: ComponentCreator('/', '2e1'),
     exact: true
   },
   {

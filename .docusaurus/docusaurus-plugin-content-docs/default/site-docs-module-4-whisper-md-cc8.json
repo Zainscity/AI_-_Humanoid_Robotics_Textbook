@@ -5,20 +5,20 @@
   "source": "@site/docs/module4/whisper.md",
   "sourceDirName": "module4",
   "slug": "/module4/whisper",
-  "permalink": "/humanoid_robotics_book/docs/module4/whisper",
+  "permalink": "/docs/module4/whisper",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/module4/whisper.md",
+  "editUrl": "https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook/tree/main/docs/module4/whisper.md",
   "tags": [],
   "version": "current",
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Chapter 11: Bipedal Navigation with Nav2",
-    "permalink": "/humanoid_robotics_book/docs/module3/nav2-biped"
+    "permalink": "/docs/module3/nav2-biped"
   },
   "next": {
     "title": "Chapter 13: Cognitive Planning with Large Language Models",
-    "permalink": "/humanoid_robotics_book/docs/module4/llm-planning"
+    "permalink": "/docs/module4/llm-planning"
   }
 }

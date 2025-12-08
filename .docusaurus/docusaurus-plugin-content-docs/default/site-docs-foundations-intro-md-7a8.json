@@ -5,20 +5,20 @@
   "source": "@site/docs/foundations/intro.md",
   "sourceDirName": "foundations",
   "slug": "/foundations/intro",
-  "permalink": "/humanoid_robotics_book/docs/foundations/intro",
+  "permalink": "/docs/foundations/intro",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/foundations/intro.md",
+  "editUrl": "https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook/tree/main/docs/foundations/intro.md",
   "tags": [],
   "version": "current",
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Introduction: Building the Future of Physical AI",
-    "permalink": "/humanoid_robotics_book/docs/"
+    "permalink": "/docs/"
   },
   "next": {
     "title": "Chapter 1: Understanding ROS 2 Nodes",
-    "permalink": "/humanoid_robotics_book/docs/module1/ros2-nodes"
+    "permalink": "/docs/module1/ros2-nodes"
   }
 }

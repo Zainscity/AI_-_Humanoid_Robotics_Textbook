@@ -5,20 +5,20 @@
   "source": "@site/docs/capstone/main.md",
   "sourceDirName": "capstone",
   "slug": "/capstone/main",
-  "permalink": "/humanoid_robotics_book/docs/capstone/main",
+  "permalink": "/docs/capstone/main",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/capstone/main.md",
+  "editUrl": "https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook/tree/main/docs/capstone/main.md",
   "tags": [],
   "version": "current",
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Chapter 14: Building Vision-Language-Action (VLA) Pipelines",
-    "permalink": "/humanoid_robotics_book/docs/module4/vla-pipelines"
+    "permalink": "/docs/module4/vla-pipelines"
   },
   "next": {
     "title": "Appendix A: Hardware Guide",
-    "permalink": "/humanoid_robotics_book/docs/appendices/hardware-guide"
+    "permalink": "/docs/appendices/hardware-guide"
   }
 }

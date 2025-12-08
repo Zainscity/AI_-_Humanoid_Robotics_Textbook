@@ -5,20 +5,20 @@
   "source": "@site/docs/module1/ros2-nodes.md",
   "sourceDirName": "module1",
   "slug": "/module1/ros2-nodes",
-  "permalink": "/humanoid_robotics_book/docs/module1/ros2-nodes",
+  "permalink": "/docs/module1/ros2-nodes",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/module1/ros2-nodes.md",
+  "editUrl": "https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook/tree/main/docs/module1/ros2-nodes.md",
   "tags": [],
   "version": "current",
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Part I: Foundations of Physical AI & Embodied Intelligence",
-    "permalink": "/humanoid_robotics_book/docs/foundations/intro"
+    "permalink": "/docs/foundations/intro"
   },
   "next": {
     "title": "Chapter 2: Communicating with ROS 2 Topics",
-    "permalink": "/humanoid_robotics_book/docs/module1/ros2-topics"
+    "permalink": "/docs/module1/ros2-topics"
   }
 }

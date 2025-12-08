@@ -5,20 +5,20 @@
   "source": "@site/docs/module3/isaac-ros.md",
   "sourceDirName": "module3",
   "slug": "/module3/isaac-ros",
-  "permalink": "/humanoid_robotics_book/docs/module3/isaac-ros",
+  "permalink": "/docs/module3/isaac-ros",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/module3/isaac-ros.md",
+  "editUrl": "https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook/tree/main/docs/module3/isaac-ros.md",
   "tags": [],
   "version": "current",
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Chapter 9: NVIDIA Isaac Sim for Advanced Simulation",
-    "permalink": "/humanoid_robotics_book/docs/module3/isaac-sim-basics"
+    "permalink": "/docs/module3/isaac-sim-basics"
   },
   "next": {
     "title": "Chapter 11: Bipedal Navigation with Nav2",
-    "permalink": "/humanoid_robotics_book/docs/module3/nav2-biped"
+    "permalink": "/docs/module3/nav2-biped"
   }
 }

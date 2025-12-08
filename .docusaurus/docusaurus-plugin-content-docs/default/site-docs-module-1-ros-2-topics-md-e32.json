@@ -5,20 +5,20 @@
   "source": "@site/docs/module1/ros2-topics.md",
   "sourceDirName": "module1",
   "slug": "/module1/ros2-topics",
-  "permalink": "/humanoid_robotics_book/docs/module1/ros2-topics",
+  "permalink": "/docs/module1/ros2-topics",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/module1/ros2-topics.md",
+  "editUrl": "https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook/tree/main/docs/module1/ros2-topics.md",
   "tags": [],
   "version": "current",
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Chapter 1: Understanding ROS 2 Nodes",
-    "permalink": "/humanoid_robotics_book/docs/module1/ros2-nodes"
+    "permalink": "/docs/module1/ros2-nodes"
   },
   "next": {
     "title": "Chapter 3: Using ROS 2 Services for Request/Response",
-    "permalink": "/humanoid_robotics_book/docs/module1/ros2-services"
+    "permalink": "/docs/module1/ros2-services"
   }
 }

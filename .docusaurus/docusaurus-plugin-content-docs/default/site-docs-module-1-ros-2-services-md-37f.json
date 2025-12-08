@@ -5,20 +5,20 @@
   "source": "@site/docs/module1/ros2-services.md",
   "sourceDirName": "module1",
   "slug": "/module1/ros2-services",
-  "permalink": "/humanoid_robotics_book/docs/module1/ros2-services",
+  "permalink": "/docs/module1/ros2-services",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/module1/ros2-services.md",
+  "editUrl": "https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook/tree/main/docs/module1/ros2-services.md",
   "tags": [],
   "version": "current",
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Chapter 2: Communicating with ROS 2 Topics",
-    "permalink": "/humanoid_robotics_book/docs/module1/ros2-topics"
+    "permalink": "/docs/module1/ros2-topics"
   },
   "next": {
     "title": "Chapter 4: Handling Long-Running Tasks with ROS 2 Actions",
-    "permalink": "/humanoid_robotics_book/docs/module1/ros2-actions"
+    "permalink": "/docs/module1/ros2-actions"
   }
 }

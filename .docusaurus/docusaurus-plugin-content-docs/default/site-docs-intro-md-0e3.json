@@ -5,10 +5,10 @@
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
   "slug": "/",
-  "permalink": "/humanoid_robotics_book/docs/",
+  "permalink": "/docs/",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/Zainscity/humanoid_robotics_book/tree/main/docs/intro.md",
+  "editUrl": "https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook/tree/main/docs/intro.md",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -17,6 +17,6 @@
   "sidebar": "tutorialSidebar",
   "next": {
     "title": "Part I: Foundations of Physical AI & Embodied Intelligence",
-    "permalink": "/humanoid_robotics_book/docs/foundations/intro"
+    "permalink": "/docs/foundations/intro"
   }
 }
