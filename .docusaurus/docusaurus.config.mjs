@@ -41,7 +41,7 @@ export default {
       "title": "Physical AI & Humanoid Robotics",
       "logo": {
         "alt": "My Site Logo",
-        "src": "img/logo.png"
+        "src": "/logo.png"
       },
       "items": [
         {
