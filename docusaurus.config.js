@@ -58,7 +58,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/humanoid-robotics-social-card.jpg',
+      image: 'img/banner.png',
       navbar: {
         title: 'Physical AI & Humanoid Robotics',
         logo: {
