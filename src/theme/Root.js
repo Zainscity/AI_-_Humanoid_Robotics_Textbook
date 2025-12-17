@@ -1,6 +1,6 @@
 import React from 'react';
-import { ChatProvider } from '../../frontend/src/context/ChatContext';
-import { AuthProvider } from '../../frontend/src/context/AuthContext';
+import { ChatProvider } from '../context/ChatContext';
+import { AuthProvider } from '../context/AuthContext';
 import ChatWidget from '../components/ChatWidget';
 
 function Root({children}) {

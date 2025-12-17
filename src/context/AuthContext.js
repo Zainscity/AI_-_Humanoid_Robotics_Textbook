@@ -1,6 +1,10 @@
 import React, { createContext, useState, useEffect } from 'react';
 
-export const AuthContext = createContext(null);
+export const AuthContext = createContext({
+  isLoggedIn: false,
+  login: (token) => {},
+  logout: () => {},
+});
 
 export const AuthProvider = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

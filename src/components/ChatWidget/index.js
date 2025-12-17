@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChatContext } from '../../../frontend/src/context/ChatContext';
+import { ChatContext } from '../../context/ChatContext';
 import * as api from '../../../frontend/src/services/api';
 import { useLocation } from '@docusaurus/router';
 import styles from './styles.css';

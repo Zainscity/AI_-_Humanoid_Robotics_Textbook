@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import Layout from '@theme/Layout';
 import axios from 'axios';
 import clsx from 'clsx';
-import { AuthContext } from '../../frontend/src/context/AuthContext';
+import { AuthContext } from '../context/AuthContext';
 import './../css/login.css'; // Import the new CSS file
 
 const LoginPage = () => {

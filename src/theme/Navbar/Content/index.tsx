@@ -2,14 +2,21 @@ import React, {type ReactNode, useContext} from 'react';
 import Content from '@theme-original/Navbar/Content';
 import type ContentType from '@theme/Navbar/Content';
 import type {WrapperProps} from '@docusaurus/types';
-import { AuthContext } from '../../../frontend/src/context/AuthContext';
+import { AuthContext } from '../../../context/AuthContext';
 
-type Props = WrapperProps<typeof ContentType>;
+type Props = WrapperProps<typeof ContentType> & {
+  rightItems: NavbarItem[];
+};
+
+interface NavbarItem {
+  label: string;
+  to: string;
+}
 
 export default function ContentWrapper(props: Props): ReactNode {
   const { isLoggedIn, logout } = useContext(AuthContext);
   const {rightItems} = props;
-  const filteredRightItems = rightItems ? rightItems.filter(item => {
+  const filteredRightItems = rightItems ? rightItems.filter((item: NavbarItem) => {
     if (item.label === 'Login') {
       return !isLoggedIn;
     }
@@ -26,7 +33,7 @@ export default function ContentWrapper(props: Props): ReactNode {
 
   return (
     <>
-      <Content {...props} rightItems={filteredRightItems.map(item => {
+      <Content {...props} rightItems={filteredRightItems.map((item: NavbarItem) => {
         if (item.label === 'Logout') {
           return {
             ...item,
