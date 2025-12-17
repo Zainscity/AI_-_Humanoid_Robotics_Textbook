@@ -77,6 +77,21 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            to: '/login',
+            label: 'Login',
+            position: 'right',
+          },
+          {
+            to: '/profile',
+            label: 'Profile',
+            position: 'right',
+          },
+          {
+            label: 'Logout',
+            position: 'right',
+            to: '#', // This will be handled by the ContentWrapper
+          },
         ],
       },
       footer: {

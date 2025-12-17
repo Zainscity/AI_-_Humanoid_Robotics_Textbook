@@ -54,6 +54,21 @@ export default {
           "href": "https://github.com/Zainscity/AI_-_Humanoid_Robotics_Textbook",
           "label": "GitHub",
           "position": "right"
+        },
+        {
+          "to": "/login",
+          "label": "Login",
+          "position": "right"
+        },
+        {
+          "to": "/profile",
+          "label": "Profile",
+          "position": "right"
+        },
+        {
+          "label": "Logout",
+          "position": "right",
+          "to": "#"
         }
       ],
       "hideOnScroll": false

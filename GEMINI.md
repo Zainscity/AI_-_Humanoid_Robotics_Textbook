@@ -208,10 +208,3 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
-
-## Active Technologies
-- Python 3.10+, C++17+ (for ROS 2), Markdown + ROS 2 Humble, Gazebo 11, Unity 2022.3, NVIDIA Isaac Sim 2023.1, Docusaurus 3, Git (001-humanoid-robotics-book)
-- N/A (Content is stored in Markdown files within a Git repository) (001-humanoid-robotics-book)
-
-## Recent Changes
-- 001-humanoid-robotics-book: Added Python 3.10+, C++17+ (for ROS 2), Markdown + ROS 2 Humble, Gazebo 11, Unity 2022.3, NVIDIA Isaac Sim 2023.1, Docusaurus 3, Git

@@ -38,6 +38,16 @@ export default [
     exact: true
   },
   {
+    path: '/login',
+    component: ComponentCreator('/login', 'a8c'),
+    exact: true
+  },
+  {
+    path: '/profile',
+    component: ComponentCreator('/profile', 'ef2'),
+    exact: true
+  },
+  {
     path: '/docs',
     component: ComponentCreator('/docs', 'eda'),
     routes: [
