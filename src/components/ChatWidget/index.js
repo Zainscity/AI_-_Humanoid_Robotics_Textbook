@@ -35,6 +35,7 @@ const ChatWidget = () => {
   }, [messages]);
 
   const handleSend = async () => {
+    console.log('handleSend called');
     if (input.trim() && isLoggedIn) {
       const token = localStorage.getItem('token');
       const newMessages = [...messages, { text: input, from: 'user' }];
@@ -60,7 +61,8 @@ const ChatWidget = () => {
       <AnimatePresence>
         {isWidgetOpen && (
           <motion.div
-            className="chat-window"
+            className="chat-window open"
+            style={{ pointerEvents: isWidgetOpen ? 'auto' : 'none' }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}

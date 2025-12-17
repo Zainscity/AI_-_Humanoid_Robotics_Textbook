@@ -56,7 +56,7 @@ function FeaturesSection() {
         <div className="row">
           <div className={clsx('col col--4')}>
             <div className="text--center">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAOklEQVR42u3BAQEAAACCoP6v_MolEciAEMhACIQQCEEIRCACEQghEIIgBIIQAhGIQAgCEYhACIIQCAEhEIIgBIIgBJaHD3+2A8Fyo+0aAAAAAElFTkSuQmCC" className={styles.featureImage} alt="RAG Chatbot" />
+              <img src="banner.png" className={styles.featureImage} alt="RAG Chatbot" />
             </div>
             <h3>Interactive RAG Chatbot</h3>
             <p>Ask questions and get instant answers from the book's content with our Retrieval-Augmented Generation chatbot.</p>
