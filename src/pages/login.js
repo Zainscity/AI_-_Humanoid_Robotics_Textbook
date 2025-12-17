@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Layout from '@theme/Layout';
 import axios from 'axios';
+import clsx from 'clsx';
+import './../css/login.css'; // Import the new CSS file
 
 const LoginPage = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -30,16 +32,16 @@ const LoginPage = () => {
 
   return (
     <Layout title="Login">
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh' }}>
+      <div className="login-page">
         <div>
-          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
-            <button onClick={() => setIsLogin(true)} style={{ padding: '0.5rem 1rem', border: 'none', background: isLogin ? '#333' : '#eee', color: isLogin ? 'white' : 'black' }}>Login</button>
-            <button onClick={() => setIsLogin(false)} style={{ padding: '0.5rem 1rem', border: 'none', background: !isLogin ? '#333' : '#eee', color: !isLogin ? 'white' : 'black' }}>Register</button>
+          <div className="login-tabs">
+            <button className={clsx({ 'active': isLogin })} onClick={() => setIsLogin(true)}>Login</button>
+            <button className={clsx({ 'active': !isLogin })} onClick={() => setIsLogin(false)}>Register</button>
           </div>
-          <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '300px' }}>
-            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required style={{ padding: '0.5rem' }} />
-            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required style={{ padding: '0.5rem' }} />
-            <button type="submit" style={{ padding: '0.5rem', background: '#333', color: 'white', border: 'none' }}>{isLogin ? 'Login' : 'Register'}</button>
+          <form onSubmit={handleSubmit} className="login-form">
+            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
+            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required />
+            <button type="submit">{isLogin ? 'Login' : 'Register'}</button>
           </form>
           {message && <p style={{ marginTop: '1rem', textAlign: 'center' }}>{message}</p>}
         </div>

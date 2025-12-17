@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Layout from '@theme/Layout';
 import axios from 'axios';
 import { useHistory } from '@docusaurus/router';
+import './../css/profile.css'; // Import the new CSS file
 
 const ProfilePage = () => {
   const [user, setUser] = useState(null);
@@ -64,27 +65,27 @@ const ProfilePage = () => {
 
   return (
     <Layout title="Profile">
-      <div style={{ padding: '2rem', display: 'flex' }}>
-        <div style={{ width: '30%' }}>
+      <div className="profile-page">
+        <div className="profile-sidebar">
             <h1>Profile</h1>
             <p>Email: {user.email}</p>
-            <button onClick={handleLogout} style={{ padding: '0.5rem 1rem', background: '#333', color: 'white', border: 'none', cursor: 'pointer' }}>Logout</button>
+            <button onClick={handleLogout} className="profile-button">Logout</button>
             <h2 style={{ marginTop: '2rem' }}>Conversation History</h2>
-            <button onClick={handleNewConversation} style={{ padding: '0.5rem 1rem', background: '#333', color: 'white', border: 'none', cursor: 'pointer', marginBottom: '1rem' }}>New Conversation</button>
-            <ul>
+            <button onClick={handleNewConversation} className="profile-button" style={{ marginBottom: '1rem' }}>New Conversation</button>
+            <ul className="conversation-list">
               {conversations.map((convo) => (
-                <li key={convo.id} onClick={() => fetchMessages(convo.id)} style={{cursor: 'pointer', fontWeight: activeConversation === convo.id ? 'bold' : 'normal'}}>
+                <li key={convo.id} onClick={() => fetchMessages(convo.id)} className={clsx({ 'active': activeConversation === convo.id })}>
                   <p>Conversation ID: {convo.id}</p>
                   <p>Created at: {new Date(convo.created_at).toLocaleString()}</p>
                 </li>
               ))}
             </ul>
         </div>
-        <div style={{ width: '70%', paddingLeft: '2rem' }}>
+        <div className="profile-content">
             <h2>Messages</h2>
-            <div className="messages">
+            <div className="profile-messages">
                 {messages.map((msg, index) => (
-                  <div key={index} className={`message ${msg.is_from_user ? 'user' : 'bot'}`}>
+                  <div key={index} className={clsx('profile-message', msg.is_from_user ? 'user' : 'bot')}>
                     <p>{msg.content}</p>
                   </div>
                 ))}
