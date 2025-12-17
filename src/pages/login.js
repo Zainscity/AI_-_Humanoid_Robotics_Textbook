@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Layout from '@theme/Layout';
 import axios from 'axios';
 import clsx from 'clsx';
+import { AuthContext } from '../../frontend/src/context/AuthContext';
 import './../css/login.css'; // Import the new CSS file
 
 const LoginPage = () => {
@@ -9,6 +10,7 @@ const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
+  const { login } = useContext(AuthContext);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -18,7 +20,7 @@ const LoginPage = () => {
           username: email,
           password: password,
         }));
-        localStorage.setItem('token', response.data.access_token);
+        login(response.data.access_token);
         setMessage('Login successful!');
         window.location.href = '/';
       } else {
@@ -34,9 +36,9 @@ const LoginPage = () => {
     <Layout title="Login">
       <div className="login-page">
         <div>
-          <div className="login-tabs">
-            <button className={clsx({ 'active': isLogin })} onClick={() => setIsLogin(true)}>Login</button>
-            <button className={clsx({ 'active': !isLogin })} onClick={() => setIsLogin(false)}>Register</button>
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
+            <button className={clsx("login-tabs-button", { 'active': isLogin })} onClick={() => setIsLogin(true)}>Login</button>
+            <button className={clsx("login-tabs-button", { 'active': !isLogin })} onClick={() => setIsLogin(false)}>Register</button>
           </div>
           <form onSubmit={handleSubmit} className="login-form">
             <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />

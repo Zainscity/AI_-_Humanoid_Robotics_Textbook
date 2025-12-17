@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Layout from '@theme/Layout';
 import axios from 'axios';
 import { useHistory } from '@docusaurus/router';
+import clsx from 'clsx';
 import './../css/profile.css'; // Import the new CSS file
 
 const ProfilePage = () => {

@@ -1,25 +1,13 @@
-import React, {type ReactNode, useState, useEffect} from 'react';
+import React, {type ReactNode, useContext} from 'react';
 import Content from '@theme-original/Navbar/Content';
 import type ContentType from '@theme/Navbar/Content';
 import type {WrapperProps} from '@docusaurus/types';
-import {useLocation} from '@docusaurus/router';
+import { AuthContext } from '../../../frontend/src/context/AuthContext';
 
 type Props = WrapperProps<typeof ContentType>;
 
-const useIsLoggedIn = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const location = useLocation();
-
-  useEffect(() => {
-    const token = localStorage.getItem('token');
-    setIsLoggedIn(!!token);
-  }, [location.pathname]);
-
-  return isLoggedIn;
-};
-
 export default function ContentWrapper(props: Props): ReactNode {
-  const isLoggedIn = useIsLoggedIn();
+  const { isLoggedIn, logout } = useContext(AuthContext);
   const {rightItems} = props;
   const filteredRightItems = rightItems ? rightItems.filter(item => {
     if (item.label === 'Login') {
@@ -32,7 +20,7 @@ export default function ContentWrapper(props: Props): ReactNode {
   }) : [];
 
   const handleLogout = () => {
-    localStorage.removeItem('token');
+    logout();
     window.location.href = '/';
   };
 
