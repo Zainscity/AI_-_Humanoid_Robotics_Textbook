@@ -50,6 +50,7 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        clientModules: [require.resolve('./src/clientModules.js')],
       }),
     ],
   ],
