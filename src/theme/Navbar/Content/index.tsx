@@ -3,6 +3,7 @@ import Content from '@theme-original/Navbar/Content';
 import type ContentType from '@theme/Navbar/Content';
 import type {WrapperProps} from '@docusaurus/types';
 import { AuthContext } from '../../../context/AuthContext';
+import { useHistory } from '@docusaurus/router';
 
 type Props = WrapperProps<typeof ContentType> & {
   rightItems: NavbarItem[];
@@ -16,6 +17,7 @@ interface NavbarItem {
 export default function ContentWrapper(props: Props): ReactNode {
   const { isLoggedIn, logout } = useContext(AuthContext);
   const {rightItems} = props;
+  const history = useHistory();
   const filteredRightItems = rightItems ? rightItems.filter((item: NavbarItem) => {
     if (item.label === 'Login') {
       return !isLoggedIn;
@@ -28,7 +30,7 @@ export default function ContentWrapper(props: Props): ReactNode {
 
   const handleLogout = () => {
     logout();
-    window.location.href = '/';
+    history.push('/');
   };
 
   return (

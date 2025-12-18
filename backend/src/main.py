@@ -13,6 +13,7 @@ origins = [
     "http://localhost",
     "http://localhost:3000",
     "https://ai-humanoid-robotics-textbook-a9c0uvvkm-zainscitys-projects.vercel.app",
+    "https://ai-humanoid-robotics-textbook-three.vercel.app",
 ]
 
 app.add_middleware(
