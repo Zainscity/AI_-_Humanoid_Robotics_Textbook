@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 import axios from 'axios';
 import clsx from 'clsx';
 import { AuthContext } from '../context/AuthContext';
+import API_BASE_URL from '../config';
 import './../css/login.css'; // Import the new CSS file
 
 const LoginPage = () => {
@@ -16,7 +17,7 @@ const LoginPage = () => {
     e.preventDefault();
     try {
       if (isLogin) {
-        const response = await axios.post('http://localhost:8000/auth/token', new URLSearchParams({
+        const response = await axios.post(`${API_BASE_URL}/auth/token`, new URLSearchParams({
           username: email,
           password: password,
         }));
@@ -24,7 +25,7 @@ const LoginPage = () => {
         setMessage('Login successful!');
         window.location.href = '/';
       } else {
-        await axios.post('http://localhost:8000/auth/register', { email, password });
+        await axios.post(`${API_BASE_URL}/auth/register`, { email, password });
         setMessage('Registration successful! Please log in.');
       }
     } catch (error) {

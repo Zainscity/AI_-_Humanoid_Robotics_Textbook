@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 import axios from 'axios';
 import { useHistory } from '@docusaurus/router';
 import clsx from 'clsx';
+import API_BASE_URL from '../config';
 import './../css/profile.css'; // Import the new CSS file
 
 const ProfilePage = () => {
@@ -20,12 +21,12 @@ const ProfilePage = () => {
       // Fetch user data and conversations
       const fetchUserData = async () => {
         try {
-          const userResponse = await axios.get('http://localhost:8000/auth/me', {
+          const userResponse = await axios.get(`${API_BASE_URL}/auth/me`, {
             headers: { Authorization: `Bearer ${token}` },
           });
           setUser(userResponse.data);
 
-          const conversationsResponse = await axios.get('http://localhost:8000/history/conversations', {
+          const conversationsResponse = await axios.get(`${API_BASE_URL}/history/conversations`, {
             headers: { Authorization: `Bearer ${token}` },
           });
           setConversations(conversationsResponse.data);
@@ -52,7 +53,7 @@ const ProfilePage = () => {
   const fetchMessages = async (conversationId) => {
     const token = localStorage.getItem('token');
     if (token) {
-      const msgs = await axios.get(`http://localhost:8000/history/conversations/${conversationId}/messages`, {
+      const msgs = await axios.get(`${API_BASE_URL}/history/conversations/${conversationId}/messages`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setMessages(msgs.data);
