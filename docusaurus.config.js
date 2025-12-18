@@ -50,10 +50,11 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-        clientModules: [require.resolve('./src/clientModules.js')],
       }),
     ],
   ],
+
+  clientModules: [require.resolve('./src/clientModules.js')],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
