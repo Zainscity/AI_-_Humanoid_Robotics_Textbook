@@ -1,4 +1,5 @@
 import React, { createContext, useState, useEffect } from 'react';
+import useIsBrowser from '@docusaurus/useIsBrowser';
 
 export const AuthContext = createContext({
   isLoggedIn: false,
@@ -8,15 +9,18 @@ export const AuthContext = createContext({
 
 export const AuthProvider = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const isBrowser = useIsBrowser();
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (token) {
-      setIsLoggedIn(true);
-    } else {
-      setIsLoggedIn(false);
+    if (isBrowser) {
+      const token = localStorage.getItem('token');
+      if (token) {
+        setIsLoggedIn(true);
+      } else {
+        setIsLoggedIn(false);
+      }
     }
-  }, []); // Run only once on mount
+  }, [isBrowser]);
 
   const login = (token) => {
     localStorage.setItem('token', token);

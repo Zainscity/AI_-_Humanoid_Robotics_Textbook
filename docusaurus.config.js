@@ -89,11 +89,6 @@ const config = {
             label: 'Profile',
             position: 'right',
           },
-          {
-            label: 'Logout',
-            position: 'right',
-            to: '#', // This will be handled by the ContentWrapper
-          },
         ],
       },
       footer: {
