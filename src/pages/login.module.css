@@ -1,0 +1,213 @@
+/*
+ * src/pages/login.module.css
+ * Styles for the new professional login page.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/* --- Main Page Container & Background --- */
+
+.loginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Light & Dark Mode Backgrounds */
+.loginPage.light {
+  background-image: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.2)), url('/static/img/hero-background-light.png');
+}
+
+.loginPage.dark {
+  background-image: linear-gradient(to right, rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.2)), url('/static/img/hero-background-dark.png');
+}
+
+/* --- Glassmorphism Auth Card --- */
+
+.authCard {
+  width: 100%;
+  max-width: 420px;
+  padding: 2.5rem;
+  border-radius: 24px;
+  border: 1px solid;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  transition: background 0.3s ease, border-color 0.3s ease;
+  
+  /* Glassmorphism Effect */
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+.authCard.light {
+  background: rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.authCard.dark {
+  background: rgba(28, 28, 30, 0.7);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* --- Tab Switcher --- */
+
+.tabContainer {
+  display: flex;
+  margin-bottom: 2rem;
+  position: relative;
+  background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.tabButton {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  background: none;
+  color: var(--ifm-font-color-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.tabButton.active {
+  color: var(--ifm-font-color-primary);
+}
+
+.activeTabPill {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px; /* Will be updated by Framer Motion */
+  right: 4px; /* Will be updated by Framer Motion */
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.activeTabPill.light {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.activeTabPill.dark {
+  background-color: rgba(50, 50, 50, 0.8);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Form & Inputs --- */
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  position: relative;
+}
+
+.inputIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
+  color: var(--ifm-font-color-secondary);
+  pointer-events: none;
+}
+
+.formInput {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem; /* Left padding for icon */
+  border-radius: 8px;
+  border: 1px solid;
+  font-size: 1rem;
+  background-color: rgba(128, 128, 128, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  color: var(--ifm-font-color-primary);
+}
+
+.formInput.light {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.formInput.dark {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 3px rgba(37, 194, 160, 0.3);
+}
+
+.passwordToggle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--ifm-font-color-secondary);
+}
+
+/* --- CTA Button --- */
+
+.submitButton {
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-size: 200% auto;
+  
+  /* Gradient */
+  background-image: linear-gradient(to right, #25c2a0 0%, #1a8870 51%, #25c2a0 100%);
+}
+
+.submitButton:hover {
+  background-position: right center; /* change the direction of the change here */
+  box-shadow: 0 0 20px rgba(37, 194, 160, 0.5);
+  transform: translateY(-2px);
+}
+
+.submitButton:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 0 5px rgba(37, 194, 160, 0.3);
+}
+
+/* --- Message / Error --- */
+
+.message {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.message.success {
+  color: var(--ifm-color-primary);
+}
+
+.message.error {
+  color: #ff4d4f;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 480px) {
+  .authCard {
+    padding: 2rem 1.5rem;
+  }
+}
