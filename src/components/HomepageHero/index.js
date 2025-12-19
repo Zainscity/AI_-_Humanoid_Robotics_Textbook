@@ -21,7 +21,7 @@ export default function HomepageHero() {
         <div className={styles.buttons}>
           <Link
             className={clsx('button button--primary button--lg', styles.heroButton)}
-            to="/docs/intro">
+            to="/docs/">
             Explore the Curriculum
           </Link>
         </div>
