@@ -15,18 +15,36 @@ interface NavbarItem {
 }
 
 export default function ContentWrapper(props: Props): ReactNode {
-  const { isLoggedIn } = useContext(AuthContext);
-  const { rightItems } = props;
-
-  const filteredRightItems = rightItems.filter(item => {
-    if (isLoggedIn) {
-      // User is logged in, show Profile, hide Login
-      return item.label !== 'Login';
-    } else {
-      // User is logged out, show Login, hide Profile
-      return item.label !== 'Profile';
+  const { isLoggedIn, logout } = useContext(AuthContext);
+  const {rightItems} = props;
+  const history = useHistory();
+  const filteredRightItems = rightItems ? rightItems.filter((item: NavbarItem) => {
+    if (item.label === 'Login') {
+      return !isLoggedIn;
     }
-  });
+    if (item.label === 'Profile') {
+      return isLoggedIn;
+    }
+    return true;
+  }) : [];
 
-  return <Content {...props} rightItems={filteredRightItems} />;
+  const handleLogout = () => {
+    logout();
+    history.push('/');
+  };
+
+  return (
+    <>
+      <Content {...props} rightItems={filteredRightItems.map((item: NavbarItem) => {
+        if (item.label === 'Logout') {
+          return {
+            ...item,
+            onClick: handleLogout,
+            to: '#' // Prevent navigation
+          };
+        }
+        return item;
+      })} />
+    </>
+  );
 }
