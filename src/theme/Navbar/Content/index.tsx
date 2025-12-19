@@ -22,7 +22,10 @@ export default function ContentWrapper(props: Props): ReactNode {
     if (item.label === 'Login') {
       return !isLoggedIn;
     }
-    if (item.label === 'Profile' || item.label === 'Logout') {
+    if (item.label === 'Profile') {
+      return isLoggedIn;
+    }
+    if (item.label === 'Logout') {
       return isLoggedIn;
     }
     return true;
