@@ -111,6 +111,13 @@ const LoginPageContent = () => {
                         className={clsx(styles.tabButton, { [styles.active]: isLogin })}
                         aria-pressed={isLogin}
                     >
+                        {isLogin && (
+                            <motion.div
+                                className={clsx(styles.activeTabPill, styles[colorMode])}
+                                layoutId="active-pill"
+                                transition={{ type: 'spring', stiffness: 500, damping: 30 }}
+                            />
+                        )}
                         Login
                     </button>
                     <button
@@ -118,15 +125,15 @@ const LoginPageContent = () => {
                         className={clsx(styles.tabButton, { [styles.active]: !isLogin })}
                         aria-pressed={!isLogin}
                     >
+                        {!isLogin && (
+                            <motion.div
+                                className={clsx(styles.activeTabPill, styles[colorMode])}
+                                layoutId="active-pill"
+                                transition={{ type: 'spring', stiffness: 500, damping: 30 }}
+                            />
+                        )}
                         Register
                     </button>
-                    <motion.div
-                        className={clsx(styles.activeTabPill, styles[colorMode])}
-                        layout
-                        transition={{ type: 'spring', stiffness: 500, damping: 30 }}
-                        initial={false}
-                        animate={{ x: isLogin ? '0%' : '100%' }}
-                    />
                 </div>
 
                 {/* --- Form Area --- */}
