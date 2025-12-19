@@ -1,0 +1,112 @@
+/* src/components/HomepageHero/styles.module.css */
+
+.heroBanner {
+  position: relative;
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease-in-out;
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+/* Light & Dark Mode Backgrounds */
+/* Instructions will be provided to place images at static/img/hero-background-light.png and static/img/hero-background-dark.png */
+.heroBanner.light {
+  background-image: url('/static/img/hero-background-light.png');
+}
+
+.heroBanner.dark {
+  background-image: url('/static/img/hero-background-dark.png');
+}
+
+/* Gradient Overlay */
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+}
+
+.heroBanner.dark::before {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  max-width: 50%;
+  padding-left: 8%; /* Adjust for desired left alignment */
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.heroTitle {
+  font-size: 4rem; /* Large headline */
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+}
+
+.heroButton {
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 996px) {
+  .heroContent {
+    max-width: 80%;
+    text-align: center;
+    padding-left: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .heroBanner::before {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.2) 100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 3rem;
+  }
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+}
