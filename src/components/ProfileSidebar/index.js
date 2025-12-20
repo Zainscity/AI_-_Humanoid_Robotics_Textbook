@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import styles from './styles.module.css';
 
 // --- Helper to generate a simple color from a string ---
-const "stringToColor" = (str) => {
+const stringToColor = (str) => {
   let hash = 0;
   for (let i = 0; i < str.length; i++) {
     hash = str.charCodeAt(i) + ((hash << 5) - hash);

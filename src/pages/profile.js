@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 import axios from 'axios';
 import { useHistory } from '@docusaurus/router';
 import { useColorMode } from '@docusaurus/theme-common';
-import useWindowSize from '@docusaurus/useWindowSize';
+import { useWindowSize } from '@docusaurus/theme-common';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import clsx from 'clsx';
 import API_BASE_URL from '../config';
