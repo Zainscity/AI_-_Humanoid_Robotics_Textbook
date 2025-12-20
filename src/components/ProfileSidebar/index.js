@@ -21,7 +21,7 @@ const stringToColor = (str) => {
 // --- Avatar Placeholder ---
 const Avatar = ({ email }) => {
   const initial = email ? email.charAt(0).toUpperCase() : '?';
-  const bgColor = "stringToColor"(email || 'default');
+  const bgColor = stringToColor(email || 'default');
 
   return (
     <div className={styles.avatar} style={{ backgroundColor: bgColor }}>
