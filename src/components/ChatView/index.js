@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useColorMode } from '@docusaurus/theme-common';
 import clsx from 'clsx';
 import API_BASE_URL from '../../config';
+import * as api from '../../frontend/src/services/api';
 import styles from './styles.module.css';
 
 const SendIcon = () => (
@@ -21,11 +22,12 @@ const MenuIcon = () => (
     </svg>
 );
 
-const ChatView = ({ activeConversation, onSidebarToggle, isMobile }) => {
+const ChatView = ({ activeConversation, onConversationCreated, onSidebarToggle, isMobile }) => {
     const { colorMode } = useColorMode();
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState('');
-    const [isLoading, setIsLoading] = useState(false);
+    const [isApiLoading, setIsApiLoading] = useState(false); // Use a different name to avoid conflict
+    const [isFetchingHistory, setIsFetchingHistory] = useState(false);
     const messagesEndRef = useRef(null);
 
     // Scroll to bottom of messages
@@ -36,7 +38,7 @@ const ChatView = ({ activeConversation, onSidebarToggle, isMobile }) => {
     useEffect(() => {
         const fetchMessages = async () => {
             if (activeConversation) {
-                setIsLoading(true);
+                setIsFetchingHistory(true);
                 const token = localStorage.getItem('token');
                 if (token) {
                     try {
@@ -47,7 +49,7 @@ const ChatView = ({ activeConversation, onSidebarToggle, isMobile }) => {
                     } catch (error) {
                         console.error("Failed to fetch messages:", error);
                     } finally {
-                        setIsLoading(false);
+                        setIsFetchingHistory(false);
                     }
                 }
             } else {
@@ -65,18 +67,33 @@ const ChatView = ({ activeConversation, onSidebarToggle, isMobile }) => {
         e.preventDefault();
         if (!input.trim()) return;
 
-        // Note: The backend logic for sending a message and getting a response
-        // is not fully defined in the original code. This is a placeholder implementation.
-        // It optimistically adds the user's message and then simulates a bot response.
-        const userMessage = { content: input, is_from_user: true, id: Date.now() };
+        const token = localStorage.getItem('token');
+        if (!token) return;
+
+        const queryText = input;
+        const userMessage = { content: queryText, is_from_user: true, id: Date.now() };
         setMessages(prev => [...prev, userMessage]);
         setInput('');
+        setIsApiLoading(true);
 
-        // Simulate bot response
-        setTimeout(() => {
-            const botMessage = { content: "This is a simulated response.", is_from_user: false, id: Date.now() + 1 };
+        try {
+            const response = await api.query(queryText, activeConversation, token);
+            const botMessage = { content: response.message, is_from_user: false, id: response.message_id || Date.now() + 1 };
+            
+            // Add bot message to the existing list of messages
             setMessages(prev => [...prev, botMessage]);
-        }, 1000);
+
+            // If it was a new conversation, update the parent's state
+            if (!activeConversation && response.conversation_id) {
+                onConversationCreated(response.conversation_id);
+            }
+        } catch (error) {
+            console.error("Failed to send message:", error);
+            const errorMessage = { content: "Sorry, I couldn't get a response. Please try again.", is_from_user: false, id: Date.now() + 1 };
+            setMessages(prev => [...prev, errorMessage]);
+        } finally {
+            setIsApiLoading(false);
+        }
     };
 
     const bubbleVariants = {
@@ -94,14 +111,14 @@ const ChatView = ({ activeConversation, onSidebarToggle, isMobile }) => {
             {isMobile && <button onClick={onSidebarToggle} className={styles.menuButton} aria-label="Toggle sidebar"><MenuIcon /></button>}
             
             <div className={styles.messagesArea}>
-                {isLoading ? (
-                    <div>Loading messages...</div>
+                {isFetchingHistory ? (
+                    <div className={styles.welcomeMessage}>Loading history...</div>
                 ) : messages.length > 0 ? (
                     <AnimatePresence>
                         {messages.map((msg) => (
                             <motion.div
                                 key={msg.id}
-                                className={clsx(styles.messageBubble, styles[msg.is_from_user ? 'user' : 'bot'], styles[colorMode])}
+                                className={clsx(styles.messageBubble, msg.is_from_user ? styles.user : styles.bot, styles[colorMode])}
                                 variants={bubbleVariants}
                                 initial="hidden"
                                 animate="visible"
@@ -117,6 +134,18 @@ const ChatView = ({ activeConversation, onSidebarToggle, isMobile }) => {
                         <p>Select a conversation or start a new one.</p>
                     </div>
                 )}
+                {isApiLoading && (
+                     <motion.div
+                        className={clsx(styles.messageBubble, styles.bot, styles[colorMode])}
+                        variants={bubbleVariants}
+                        initial="hidden"
+                        animate="visible"
+                    >
+                       <div className="typing-indicator">
+                            <span /><span /><span />
+                        </div>
+                    </motion.div>
+                )}
                 <div ref={messagesEndRef} />
             </div>
 
@@ -125,10 +154,9 @@ const ChatView = ({ activeConversation, onSidebarToggle, isMobile }) => {
                     <textarea
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
-                        placeholder={activeConversation ? "Type your message..." : "Please select a conversation first"}
+                        placeholder="Ask anything about the book..."
                         className={clsx(styles.messageInput, styles[colorMode])}
                         rows="1"
-                        disabled={!activeConversation}
                         onKeyDown={(e) => {
                             if (e.key === 'Enter' && !e.shiftKey) {
                                 e.preventDefault();
@@ -136,7 +164,7 @@ const ChatView = ({ activeConversation, onSidebarToggle, isMobile }) => {
                             }
                         }}
                     />
-                    <button type="submit" className={styles.sendButton} disabled={!input.trim() || !activeConversation} aria-label="Send message">
+                    <button type="submit" className={styles.sendButton} disabled={!input.trim() || isApiLoading} aria-label="Send message">
                         <SendIcon />
                     </button>
                 </form>

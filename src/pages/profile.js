@@ -30,6 +30,20 @@ const ProfilePageContent = () => {
         setIsSidebarOpen(!isMobile);
     }, [isMobile]);
 
+    const fetchConversations = async () => {
+        const token = localStorage.getItem('token');
+        if (token) {
+            try {
+                const conversationsResponse = await axios.get(`${API_BASE_URL}/history/conversations`, {
+                    headers: { Authorization: `Bearer ${token}` },
+                });
+                setConversations(conversationsResponse.data);
+            } catch (error) {
+                console.error("Failed to fetch conversations:", error);
+            }
+        }
+    };
+
     useEffect(() => {
         const token = localStorage.getItem('token');
         if (!token) {
@@ -37,24 +51,21 @@ const ProfilePageContent = () => {
             return;
         }
 
-        const fetchUserData = async () => {
+        const fetchInitialData = async () => {
             try {
                 const userResponse = await axios.get(`${API_BASE_URL}/auth/me`, {
                     headers: { Authorization: `Bearer ${token}` },
                 });
                 setUser(userResponse.data);
-
-                const conversationsResponse = await axios.get(`${API_BASE_URL}/history/conversations`, {
-                    headers: { Authorization: `Bearer ${token}` },
-                });
-                setConversations(conversationsResponse.data);
+                fetchConversations(); // Initial fetch
             } catch (error) {
-                console.error("Authentication or data fetching error:", error);
+                console.error("Authentication error:", error);
                 localStorage.removeItem('token');
                 history.push('/login');
             }
         };
-        fetchUserData();
+        
+        fetchInitialData();
     }, [history]);
 
     const handleLogout = () => {
@@ -70,6 +81,11 @@ const ProfilePageContent = () => {
     const handleConversationSelect = (convoId) => {
         setActiveConversation(convoId);
         if (isMobile) setIsSidebarOpen(false);
+    };
+
+    const handleConversationCreated = (newConvoId) => {
+        fetchConversations(); // Refetch the list
+        setActiveConversation(newConvoId); // Set the new one as active
     };
 
     if (!user) {
@@ -94,6 +110,7 @@ const ProfilePageContent = () => {
                 <main className={styles.mainContent}>
                     <ChatView 
                         activeConversation={activeConversation}
+                        onConversationCreated={handleConversationCreated}
                         onSidebarToggle={() => setIsSidebarOpen(prev => !prev)}
                         isMobile={isMobile}
                     />
