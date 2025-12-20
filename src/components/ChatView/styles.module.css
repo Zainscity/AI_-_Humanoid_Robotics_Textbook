@@ -1,0 +1,169 @@
+/* src/components/ChatView/styles.module.css */
+
+.chatContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  border: 1px solid;
+  overflow: hidden;
+
+  /* Glassmorphism */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.chatContainer.light {
+  background: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+.chatContainer.dark {
+  background: rgba(28, 28, 30, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* --- Message Area --- */
+.messagesArea {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Custom Scrollbar */
+.messagesArea::-webkit-scrollbar { width: 8px; }
+.messagesArea::-webkit-scrollbar-track { background: transparent; }
+.messagesArea::-webkit-scrollbar-thumb { background-color: rgba(128, 128, 128, 0.3); border-radius: 4px; }
+.messagesArea::-webkit-scrollbar-thumb:hover { background-color: rgba(128, 128, 128, 0.5); }
+
+
+/* --- Message Bubbles --- */
+.messageBubble {
+  padding: 0.75rem 1.25rem;
+  border-radius: 20px;
+  max-width: 80%;
+  line-height: 1.6;
+}
+
+.messageBubble.user {
+  align-self: flex-end;
+  border-bottom-right-radius: 5px;
+  color: white;
+  background-image: linear-gradient(to right, #25c2a0 0%, #1a8870 51%, #25c2a0 100%);
+}
+
+.messageBubble.bot {
+  align-self: flex-start;
+  border-bottom-left-radius: 5px;
+}
+.messageBubble.bot.light {
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--ifm-font-color-base);
+}
+.messageBubble.bot.dark {
+  background: rgba(44, 44, 46, 0.8);
+  color: var(--ifm-font-color-base);
+}
+
+
+/* --- Welcome Message --- */
+.welcomeMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  color: var(--ifm-font-color-secondary);
+}
+.welcomeMessage h2 {
+  font-weight: 700;
+  color: var(--ifm-font-color-primary);
+}
+
+
+/* --- Input Area --- */
+.inputArea {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid;
+}
+.inputArea.light { border-color: rgba(0, 0, 0, 0.1); }
+.inputArea.dark { border-color: rgba(255, 255, 255, 0.1); }
+
+.inputForm {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.messageInput {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  resize: none;
+}
+.messageInput:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 3px rgba(37, 194, 160, 0.3);
+}
+
+.messageInput.light {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.messageInput.dark {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.sendButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  background-color: var(--ifm-color-primary);
+}
+.sendButton:hover {
+  box-shadow: 0 0 10px var(--ifm-color-primary);
+}
+.sendButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* --- Mobile Menu Button --- */
+.menuButton {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 10;
+  background: rgba(128, 128, 128, 0.2);
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  backdrop-filter: blur(5px);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: none; /* Hidden by default */
+  align-items: center;
+  justify-content: center;
+  color: var(--ifm-font-color-primary);
+}
+@media (max-width: 996px) {
+  .menuButton {
+    display: flex;
+  }
+}
