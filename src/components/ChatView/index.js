@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useColorMode } from '@docusaurus/theme-common';
 import clsx from 'clsx';
 import API_BASE_URL from '../../config';
-import * as api from '../../frontend/src/services/api';
+import * as api from '../../../frontend/src/services/api';
 import styles from './styles.module.css';
 
 const SendIcon = () => (
