@@ -80,8 +80,8 @@ const config = {
             position: 'right',
           },
           {
-            type: 'custom',
-            component: 'LoginNavbarItem', // points to our custom component
+            to: '/login',
+            label: 'Login',
             position: 'right',
           },
           {
