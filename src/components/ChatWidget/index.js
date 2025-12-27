@@ -68,11 +68,10 @@ const ChatWidget = () => {
             exit={{ opacity: 0, y: 20 }}
           >
             <div className="chat-header">
-              <div className="chat-header-title">
-                <div className="ai-icon"></div>
-                <span>AI Agent</span>
-              </div>
-              <button className="close-button" onClick={() => setIsWidgetOpen(false)}>
+                              <div className="chat-header-title">
+                                <img src="/img/robot-icon.png" alt="AI Agent Icon" className="ai-icon" />
+                                <span>AI Agent</span>
+                              </div>              <button className="close-button" onClick={() => setIsWidgetOpen(false)}>
                 &times;
               </button>
             </div>
