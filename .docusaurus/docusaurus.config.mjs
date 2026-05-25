@@ -35,6 +35,9 @@ export default {
       }
     ]
   ],
+  "clientModules": [
+    "C:\\Files\\code\\Quarter 4\\New folder (2)\\Hackathon\\humanoid_robotics_book\\src\\clientModules.js"
+  ],
   "themeConfig": {
     "image": "img/banner.png",
     "navbar": {
@@ -64,11 +67,6 @@ export default {
           "to": "/profile",
           "label": "Profile",
           "position": "right"
-        },
-        {
-          "label": "Logout",
-          "position": "right",
-          "to": "#"
         }
       ],
       "hideOnScroll": false
@@ -112,7 +110,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2025 Zainscity. Built with Docusaurus."
+      "copyright": "Copyright © 2026 Zainscity. Built with Docusaurus."
     },
     "prism": {
       "theme": {
@@ -374,7 +372,6 @@ export default {
   "scripts": [],
   "headTags": [],
   "stylesheets": [],
-  "clientModules": [],
   "titleDelimiter": "|",
   "noIndex": false,
   "markdown": {
