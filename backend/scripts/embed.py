@@ -1,7 +1,7 @@
 import os
 import sys
 import tiktoken
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from qdrant_client import QdrantClient, models
 from openai import OpenAI
 import httpx
@@ -37,7 +37,7 @@ def main():
     )
 
     # Explicitly create an httpx client with proxies disabled
-    http_client = httpx.Client(proxies=None)
+    http_client = httpx.Client()
 
     embedding_client = OpenAI(
         api_key=settings.GEMINI_API_KEY,
@@ -47,7 +47,7 @@ def main():
 
     qdrant_client.recreate_collection(
         collection_name="humanoid_robotics_book",
-        vectors_config=models.VectorParams(size=768, distance=models.Distance.COSINE),
+        vectors_config=models.VectorParams(size=3072, distance=models.Distance.COSINE),
     )
 
     docs_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "docs")
@@ -61,7 +61,7 @@ def main():
                 for i, chunk in enumerate(chunks):
                     response = embedding_client.embeddings.create(
                         input=chunk,
-                        model="models/text-embedding-004"
+                        model="gemini-embedding-2"
                     )
                     point_id = str(uuid.uuid5(uuid.NAMESPACE_URL, f"{file_path}-{i}"))
                     qdrant_client.upsert(

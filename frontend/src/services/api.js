@@ -19,7 +19,7 @@ export const login = async (username, password) => {
 
 export const query = async (query, conversation_id, token) => {
   console.log('token in api.js:', token);
-  const response = await axios.post(`${API_URL}/query`, { query, conversation_id }, getAuthConfig(token));
+  const response = await axios.post(`${API_URL}/query/`, { query, conversation_id }, getAuthConfig(token));
   return response.data;
 };
 

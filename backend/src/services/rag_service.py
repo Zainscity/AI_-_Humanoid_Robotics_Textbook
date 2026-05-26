@@ -57,7 +57,7 @@ def selected_query(query: str, context: str, conversation_id: str, db, current_u
 def query(query: str, conversation_id: str, db, current_user: user.User):
     response = embedding_client.embeddings.create(
         input=query,
-        model="models/text-embedding-004"
+        model="gemini-embedding-2"
     )
     query_embedding = response.data[0].embedding
 

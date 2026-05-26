@@ -12,7 +12,7 @@ class User(UserBase):
     id: uuid.UUID
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class ConversationBase(BaseModel):
     pass
@@ -26,7 +26,7 @@ class Conversation(ConversationBase):
     created_at: datetime
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class MessageBase(BaseModel):
     content: str
@@ -41,7 +41,7 @@ class Message(MessageBase):
     created_at: datetime
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class RetrievalLogBase(BaseModel):
     retrieved_context: dict
@@ -55,4 +55,4 @@ class RetrievalLog(RetrievalLogBase):
     created_at: datetime
 
     class Config:
-        orm_mode = True
+        from_attributes = True

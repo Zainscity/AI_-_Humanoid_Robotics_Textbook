@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://humanoid-robotics-backend-sooty.vercel.app';
+const API_BASE_URL = 'http://localhost:8000';
 
 export default API_BASE_URL;
 
